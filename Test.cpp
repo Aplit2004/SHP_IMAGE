@@ -1,8 +1,19 @@
 #include<iostream>
 #include<cassert>
-#include "Pixel.h"
+#include "Pixel.cpp"
 using namespace std;
 int main(){
+	Color c;
+	c.R = 255;
+	assert(c.R == 255);
+	assert(c.G == 0);
+
+	Color c1(BLUE);
+	assert(c1.R == 0);
+	assert(c1.G == 0);
+	assert(c1.B == 255);
+	assert(c1.A == 0);
+
 	Point p;
 	assert(p.x==0);
 	assert(p.y==0);
